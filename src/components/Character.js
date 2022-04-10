@@ -12,13 +12,14 @@ const Character = ({character, onFavouriteToggle}) => {
 
     return (
         <>
-        
+        <div className="character" >
         <h4>Name: {character.name}</h4>
         <h4>House: {character.house}</h4>
         <h4>Date of Birth: {character.dateOfBirth}</h4>
         <h4>Actor: {character.actor}</h4>
         <img src={character.image} alt="Picture not available" />
         <button onClick={handleClick}>{favouriteButtonText}</button>
+        </div>
         </>
     )
 }

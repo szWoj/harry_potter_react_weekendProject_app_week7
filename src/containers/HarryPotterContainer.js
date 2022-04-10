@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import CharacterSelector from "../components/CharacterSelector";
 import Character from "../components/Character";
 import FavouriteCharacters from "../components/FavouriteCharacters";
+import CharactersList from "../components/CharactersList";
 
 const HarryPotterContainer = () => {
 
@@ -14,7 +15,8 @@ const HarryPotterContainer = () => {
     }, [])
     
     const getCharacters = () => {
-        fetch("http://hp-api.herokuapp.com/api/characters")
+        // fetch("http://hp-api.herokuapp.com/api/characters")
+        fetch("http://hp-api.herokuapp.com/api/characters/staff")
         .then(res => res.json())
         // .then(song=> console.log(song))
         .then(characters => setCharacters(characters))
@@ -40,9 +42,14 @@ const HarryPotterContainer = () => {
     return (
         <>
         <h2>Harry Potter's Characters</h2>
-        <CharacterSelector characters = {characters} onCharacterSelected={handleCharacterSelected}/>
-        <Character character = {selectedCharacter} onFavouriteToggle={handleFavouriteCharacters}/>
         <FavouriteCharacters characters={characters} onCharacterSelected={handleCharacterSelected}/>
+        
+        <CharacterSelector characters = {characters} onCharacterSelected={handleCharacterSelected}/>
+        
+        
+        {selectedCharacterString ? <Character character = {selectedCharacter} onFavouriteToggle={handleFavouriteCharacters}/> : <CharactersList characters={characters} onFavouriteToggle={handleFavouriteCharacters}/>}
+        
+        
         </>
     )
 }
