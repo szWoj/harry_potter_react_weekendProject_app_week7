@@ -25,8 +25,10 @@ const CharactersList = ({characters, onFavouriteToggle}) => {
         }
         
     }).map((character, index) => {
-        return <Character character={character} key={index} />
+        return <Character character={character} key={index} onFavouriteToggle={onFavouriteToggle} />
     })
+
+    
 
     return (
     <>
