@@ -15,10 +15,10 @@ const HarryPotterContainer = () => {
     }, [])
     
     const getCharacters = () => {
-        // fetch("http://hp-api.herokuapp.com/api/characters")
-        fetch("http://hp-api.herokuapp.com/api/characters/staff")
+        fetch("http://hp-api.herokuapp.com/api/characters")
+        // fetch("http://hp-api.herokuapp.com/api/characters/staff")
         .then(res => res.json())
-        // .then(song=> console.log(song))
+        // .then(data=> console.log(data))
         .then(characters => setCharacters(characters))
     }
 
