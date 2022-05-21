@@ -2,13 +2,15 @@
 
 ![Screen Shot 2022-05-21 at 15 41 35](https://user-images.githubusercontent.com/79700458/169656660-0e6d3cd5-ebe8-45d0-aa9e-581182c01b7a.png)
 
+
+
 API used for this weekend project is: 
 http://hp-api.herokuapp.com/api/characters 
 
 It allowed me to request data on Harry Potter characters
 http://hp-api.herokuapp.com/api/characters 
 
-My React app allows me to select a Harry Potter's character from a dropdown menu. Once selected, information about selected character will appear.
+My React app allows user to select a Harry Potter's character from a dropdown menu. Once selected, information about selected character will appear.
 ![Screen Shot 2022-05-21 at 15 52 50](https://user-images.githubusercontent.com/79700458/169657053-aff971f4-474f-4d02-8134-5bc1672e8c32.png)
 
 Selected character can be added to the list of favourites characters and removed from it once is there
