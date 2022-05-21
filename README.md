@@ -2,6 +2,26 @@
 
 ![Screen Shot 2022-05-21 at 15 41 35](https://user-images.githubusercontent.com/79700458/169656660-0e6d3cd5-ebe8-45d0-aa9e-581182c01b7a.png)
 
+API used for this weekend project is: 
+http://hp-api.herokuapp.com/api/characters 
+
+It allowed me to request data on Harry Potter characters
+http://hp-api.herokuapp.com/api/characters 
+
+My React app allows me to select a Harry Potter's character from a dropdown menu. Once selected, information about selected character will appear.
+![Screen Shot 2022-05-21 at 15 52 50](https://user-images.githubusercontent.com/79700458/169657053-aff971f4-474f-4d02-8134-5bc1672e8c32.png)
+
+Selected character can be added to the list of favourites characters and removed from it once is there
+![Screen Shot 2022-05-21 at 15 51 45](https://user-images.githubusercontent.com/79700458/169657166-b8a6c112-f137-42b6-b2f2-2be83a32b740.png)
+
+![Screen Shot 2022-05-21 at 15 52 15](https://user-images.githubusercontent.com/79700458/169657167-e75df9da-721e-4317-9184-e9478b8f0586.png)
+
+Multiple characters can be added to the favourite list
+![Screen Shot 2022-05-21 at 15 57 51](https://user-images.githubusercontent.com/79700458/169657256-b9dff723-a825-480a-b90a-bc1dd56d979a.png)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
